@@ -1,19 +1,25 @@
 # VulScribeR
 
-Official repository for our paper:
+Official repository for our [paper](https://doi.org/10.1145/3760775):
 > *VulScribeR: Exploring RAG-based Vulnerability Augmentation with LLMs*
 
 If you find this project useful in your research, please consider citing:
 
 ```
-@article{daneshvar2024exploringragbasedvulnerabilityaugmentation,
-      title={Exploring RAG-based Vulnerability Augmentation with LLMs}, 
-      author={Seyed Shayan Daneshvar and Yu Nong and Xu Yang and Shaowei Wang and Haipeng Cai},
-      year={2024},
-      eprint={2408.04125},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE},
-      url={https://arxiv.org/abs/2408.04125}, 
+@article{VulScribeR,
+author = {Daneshvar, Seyed Shayan and Nong, Yu and Yang, Xu and Wang, Shaowei and Cai, Haipeng},
+title = {VulScribeR: Exploring RAG-based Vulnerability Augmentation with LLMs},
+year = {2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3760775},
+doi = {10.1145/3760775},
+abstract = {Detecting vulnerabilities is vital for software security, yet deep learning-based vulnerability detectors (DLVD) face a data shortage, which limits their effectiveness. Data augmentation can potentially alleviate the data shortage, but augmenting vulnerable code is challenging and requires a generative solution that maintains vulnerability. Previous works have only focused on generating samples that contain single statements or specific types of vulnerabilities. Recently, large language models (LLMs) have been used to solve various code generation and comprehension tasks with inspiring results, especially when fused with retrieval augmented generation (RAG). Therefore, we propose VulScribeR, a novel LLM-based solution that leverages carefully curated prompt templates to augment vulnerable datasets. More specifically, we explore three strategies to augment both single and multi-statement vulnerabilities, with LLMs, namely Mutation, Injection, and Extension. Our extensive evaluation across four vulnerability datasets and DLVD models, using three LLMs, show that our approach beats two SOTA methods Vulgen and VGX, and Random Oversampling (ROS) by 27.48\%, 27.93\%, and 15.41\% in f1-score with 5K generated vulnerable samples on average, and 53.84\%, 54.10\%, 69.90\%, and 40.93\% with 15K generated vulnerable samples. Our approach demonstrates its feasibility for large-scale data augmentation by generating 1K samples at as cheap as US$ 1.88.},
+note = {Just Accepted},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = aug,
+keywords = {Vulnerability Augmentation, Deep Learning, Vulnerability Generation, Program Generation, Vulnerability Injection}
 }
 ```
 
