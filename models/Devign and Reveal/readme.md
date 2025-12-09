@@ -9,7 +9,7 @@
 0. run "conda activate reveal" for preprocessing
 1. Prepare your samples in a folder (e.g., demo)
 In the folder, label the vulnerable samples with _1.c, and normal samples with _0.c
-2. Put your folder to ./preprocessing/joern/folder_name. Then go to ./preprocessing/joern/ and run ./joern-parse ./folder_name(ensure that there is no folder named parsed)
+2. Put your folder to ./preprocessing/joern/folder_name. Then go to ./preprocessing/joern/ and run ./joern-parse ./folder_name(ensure that there is no folder named parsed and joern is configured [#1](https://github.com/shayandaneshvar/VulScribeR/issues/1))
 3. Copy folder_name to ./preprocessing/data_processing/ and rename it "code"
 Copy parsed/folder_name to ./preprocessing/data_processing/ and rename it "parsed"
 4. Go to ./preprocessing/data_processing/ and run "python extract_slices.py" and "bash get_ggnn_input.sh".
